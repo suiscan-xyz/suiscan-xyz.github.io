@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "suiscan-xyz",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/suiscan-favicorn.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://suiscan-xyz.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://suiscan-xyz.github",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "2aip0hncoj",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Sui Explorer - Suiscan | Home",
+        "meta_descr": "Suiscan is a cutting-edge biometric identity verification system that combines fingerprint, facial recognition.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://suiscan.xyz/\"><img src=\"@PROJECT_PATH@/assets/images/suiscan.png\" alt=\"suiscan\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vaZNiaR3GG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Sui Explorer - <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>| Home</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan</a>: Revolutionizing the Future of Security and Identity Verification</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In an increasingly digital world, security and identity verification are becoming more critical than ever. From protecting personal information to securing financial transactions, the need for robust, reliable systems is ever-present. <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan</a>, a cutting-edge biometric and identity verification solution, has emerged as one of the frontrunners in this field, offering a new level of security for individuals and businesses alike.<br><br><b>What is <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>?<br></b><a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>is a biometric-based identity verification system designed to enhance security through advanced technology. It uses a combination of multiple biometric traits—such as <b>fingerprint recognition, facial recognition, iris scans, and voice recognition</b>—to create an ultra-secure identity verification process. By analyzing unique physical and behavioral traits, Suiscan aims to provide a more accurate, tamper-proof method of confirming a person’s identity than traditional security measures like passwords or PINs.<br><br>Unlike traditional authentication methods, which often rely on something the user knows (passwords) or something the user has (security tokens or cards), <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>verifies identity based on something inherent to the user: their biological traits. These characteristics are extremely difficult to replicate, making them ideal for ensuring that the person requesting access is, in fact, who they claim to be.<br><br><b>The Technology Behind Suiscan<br></b><a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>core technology revolves around <b>multi-modal biometrics</b>—a system that combines multiple types of biometric data to improve security and reduce the chance of false positives or errors. The main modalities that Suiscan uses include:<br><br><b>1. Fingerprint Scanning:-<br></b>One of the most widely used forms of biometric identification, fingerprints are highly unique to each individual. <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>employs advanced algorithms to scan and match fingerprint patterns in real time.<br><br><b>2. Facial Recognition:-<br></b>Using machine learning algorithms, <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>can map and analyze facial features, such as the distance between the eyes, nose, and mouth, to accurately verify identity. This technology has seen significant advancements over recent years, allowing for more reliable and faster recognition.<br><br><b>3. Iris Scanning:-<br></b>The iris (the colored part of the eye) has a unique pattern for each individual, making it one of the most secure biometric identifiers. <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>uses high-resolution imaging to capture and analyze the intricate patterns in the iris, providing an additional layer of verification.<br><br><b>4. Voice Recognition:-<br></b><a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>also integrates voice biometrics into its verification system. By analyzing the tone, pitch, and cadence of a person’s voice, the system can verify their identity. This is particularly useful in scenarios where users may not be able to interact directly with a scanning device but can still authenticate through voice.<br><br><a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>multi-modal system ensures a higher level of security because it combines several different biological markers. In the rare event that one modality is compromised, the other forms of verification still serve to safeguard the process. Additionally, the technology’s ability to cross-check various data points drastically reduces the chances of unauthorized access.<br><br><b>Applications of <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan</a><br></b><a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>versatile technology can be applied across numerous industries to streamline operations, reduce fraud, and enhance security. Below are just a few of the areas where Suiscan can have a transformative impact.<br><br><b>1. Financial Sector:<br></b>The financial industry is one of the biggest beneficiaries of <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>technology. Whether&nbsp; &nbsp; &nbsp;it’s securing online banking platforms, ensuring safe access to ATMs, or enabling secure mobile payments, biometric verification offers a higher level of security compared to traditional password-based systems. By using <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan</a>, banks and other financial institutions can offer customers a safer, more convenient way to access their accounts and conduct transactions.<br><br><b>2. Healthcare:<br></b>In healthcare, patient identification is crucial to ensuring that medical records are correctly matched to the right person. <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>biometrics can help verify patient identity with near-perfect accuracy, reducing the risk of medical errors and fraud. Additionally, doctors and healthcare providers can benefit from streamlined access to patient records and secure communication.<br><br><b>3. Government and Law Enforcement:<br></b>Governments and law enforcement agencies are increasingly adopting biometric solutions to improve national security and citizen services. <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>can be used for border control, passport and visa issuance, and voter identification. The system can help verify identities quickly and accurately, reducing wait times and ensuring secure, efficient processes.<br><br><b>4. Corporate Security:<br></b>Businesses of all sizes are looking for more reliable ways to secure access to physical premises, data, and sensitive systems. <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>can be deployed in workplace environments to control employee access to offices, data centers, and secure areas. Similarly, companies can use it for digital identity management and secure login to systems, eliminating the need for cumbersome passwords and the security risks associated with weak or compromised credentials.<br><br><b>5. Smart Homes and IoT Devices:<br></b>The rise of smart homes and IoT devices presents new challenges in security. <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>offers a robust solution for these systems, allowing individuals to access smart home devices using their biometric identifiers. From locking doors to unlocking personal devices, biometric authentication adds an extra layer of protection to the connected world.<br><br><b>Advantages of <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>Over Traditional Security Systems<br></b>While traditional security systems such as passwords, PINs, and even smart cards have served their purpose, they come with significant vulnerabilities. Passwords can be forgotten, stolen, or guessed; smart cards can be lost or duplicated. Suiscan, on the other hand, offers several key advantages:<br><br><b>1. Unbeatable Accuracy:<br></b>Biometrics, by their nature, are incredibly difficult to replicate. Suiscan’s multi-modal approach further enhances accuracy, ensuring that identity verification is highly precise.<br><br><b>2. Convenience:<br></b>With <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan</a>, users don’t need to remember passwords or carry physical tokens. Authentication is quick and seamless—whether using a fingerprint, facial scan, or voice recognition—making the process faster and more user-friendly.<br><br><b>3. Reduced Risk of Fraud:<br></b>Because biometric data is inherently unique to the individual, it is far more secure than traditional authentication methods. This dramatically reduces the risk of identity theft, fraud, and unauthorized access.<br><br><b>4. Cost Efficiency:<br></b>While the initial setup of a biometric system like <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>might seem expensive, it can save money in the long run by reducing the need for password resets, security breaches, and the maintenance of physical security tokens or cards.<br><br><b>5. Non-Intrusive:<br></b>Many biometric systems, especially those based on facial or voice recognition, don’t require direct interaction from the user. This non-intrusive feature is not only convenient but also ideal for public spaces or situations where a user might be unable to physically interact with a device.<br><br><b>Challenges and Ethical Considerations</b><br>Despite its many advantages, <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>biometric technology is not without its challenges and ethical considerations. Privacy concerns surrounding biometric data are a significant issue, as individuals may worry about how their data is being stored, shared, and protected. Any system that stores sensitive biometric data must ensure that it is adequately encrypted and that users have control over their information.<br><br>Moreover, while biometrics are generally considered highly secure, no system is entirely foolproof. There remains the potential for cyberattacks, such as spoofing or hacking of biometric data, which could compromise security.<br><br>Lastly, the widespread use of biometric systems like Suiscan could raise issues regarding surveillance and personal freedom. The ability to track individuals based on their unique biological traits presents concerns about civil liberties, especially if such data is not handled responsibly.<br><br><b>Conclusion</b><br><a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan </a>stands at the forefront of the digital identity verification revolution, offering a secure, accurate, and convenient solution to many of today’s security challenges.<b> Its multi-modal approach to biometric</b> authentication addresses the flaws of traditional systems while providing unmatched accuracy and convenience. While the adoption of such technology raises important ethical and privacy concerns, when implemented responsibly, Suiscan has the potential to revolutionize identity verification across a wide range of industries, from finance to healthcare to government.<br><br>As technology continues to evolve, <b>so too will the sophistication of identity verification</b> solutions like <a href=\"https://suiscan.xyz/\" class=\"text-primary\">Suiscan</a>. With further advancements, we can expect biometric authentication to become an integral part of everyday life, paving the way for a future where security and convenience go hand in hand.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vaZNjdkjf4",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
